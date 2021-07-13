@@ -16,7 +16,7 @@ const matches = (callback)=>{
 }
 
 const scorecard = (id,callback)=>{
-    const scorecardUrl = process.env.SCORECARD_API_KEY+'='+id.toString(10)
+    const scorecardUrl = process.env.SCORECARD_API_KEY+'&unique_id='+id.toString(10)
     //'https://cricapi.com/api/fantasySummary?apikey=6naQbZX60FgYHKtyZzGfLK8uPH03&unique_id='+id.toString(10)
     //+id.toString(10)
     //https://cricapi.com/api/fantasySummary?apikey=TGL6XDHgcaMsBT3u4RByGjF0vEX2&unique_id=1034809
@@ -47,7 +47,7 @@ const oldMatches = (callback)=>{
 }
 
 const playerFinder =(id,callback)=>{
-   const playerfinderUrl = process.env.PLAYERFINDER_API_KEY+'='+id
+   const playerfinderUrl = process.env.PLAYERFINDER_API_KEY+'&pid='+id
    //'https://cricapi.com/api/playerStats?apikey=6naQbZX60FgYHKtyZzGfLK8uPH03&pid='+id
    //pid=35320
    request({url:playerfinderUrl,json:true},(error,response)=>{
