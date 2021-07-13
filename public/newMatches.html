@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/oldstyles.css">
+  <link rel="icon" href="./img/cricicon.jpg">
+  <title>Upcoming matches</title>
+</head>
+<body>
+  <div id="top">
+    <img src="./img/mycricfuzz.jpg">
+    <h1>Upcoming Matches</h1>
+  </div>
+
+  <ul>
+    <li><a  href="/">Home</a></li>
+    <li><a class="active" href="/newmatches">Upcoming Matches</a></li>
+    <li><a href="/playerfinder">Player Finder</a></li>
+    <li><a href="/previousMatches">Old Matches</a></li>
+  </ul>
+
+
+  <div class="row" style="margin-top:30px;">
+  </div>
+  
+  <div id="usable" style="display:none">
+    <div class="column">
+     <h2 style="height:50px;">{{team1}} vs {{team2}}</h2>
+     <p style="height:20px;overflow:hidden">{{type}}</p>
+     <p>match starts at {{time}}GMT on {{date}}</p>
+   </div>
+  </div>
+
+<script src="./js/newMatches.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+</body>
+</html>

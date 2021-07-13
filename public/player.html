@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./css/player.css">
+    <link rel="icon" href="./img/cricicon.jpg">
+    <title>player stats</title>
+  </head>
+    <body>
+     
+        <div id="top">
+            <img src="./img/mycricfuzz.jpg">
+            <h1>Player Stats</h1>
+          </div>
+        
+          <ul>
+            <li><a  href="/">Home</a></li>
+            <li><a href="/newmatches">Upcoming Matches</a></li>
+            <li><a class="active" href="/playerfinder">Player Finder</a></li>
+            <li><a href="/previousMatches">Old Matches</a></li>
+          </ul>
+      
+      <div id="sideTitle" style="margin-top: 30x;">
+        <img id="image">
+        <div id="rightTitle">
+          <p id="name"></p>
+          <p id="country"></p>
+        </div>
+      </div>
+      
+
+    <div id="entire">
+      <fieldset id="personalInfo">
+        <legend>Personal Information</legend>
+      </fieldset>
+
+      <fieldset id="momz">
+        <legend>Profile</legend>
+        <p></p>
+       </fieldset>
+
+        <p class="anotherTitle">Batting Career Summary</p>
+        <table id='battingTable' style="border-collapse: collapse">
+          <tr>
+            <th></th>
+            <th>Matches</th>
+            <th>Innings</th>
+            <th>NO</th>
+            <th>Runs</th>
+            <th>HS</th>
+            <th>Avg</th>
+            <th>BF</th>
+            <th>SR</th>
+            <th>100</th>
+            <th>50</th>
+            <th>4s</th>
+            <th>6s</th>
+          </tr>
+        </table>
+        
+        <p class="anotherTitle">Bowling Career Summary</p>
+        <table id="bowlingTable" style="border-collapse: collapse;margin-left: 70px;">
+          <tr>
+            <th></th>
+            <th>Matches</th>
+            <th>Innings</th>
+            <th>Balls</th>
+            <th>Runs</th>
+            <th>Wkts</th>
+            <th>BBI</th>
+            <th>BBM</th>
+            <th>Avg</th>
+            <th>Econ</th>
+            <th>SR</th>
+            <th>4W</th>
+            <th>5W</th>
+            <th>10W</th>
+          </tr>
+        </table>
+    </div>
+      <script src="./js/player.js"></script>
+    </body>
+</html>

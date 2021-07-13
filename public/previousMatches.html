@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/oldstyles.css">
+  <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+  <link rel="icon" href="./img/cricicon.jpg">
+  <title>old matches</title>
+</head>
+<body>
+  <div id="top">
+    <img src="./img/mycricfuzz.jpg">
+    <h1>Recent  Matches</h1>
+  </div>
+
+  <ul>
+    <li><a  href="/">Home</a></li>
+    <li><a href="/newmatches">Upcoming Matches</a></li>
+    <li><a href="/playerfinder">Player Finder</a></li>
+    <li><a class="active" href="/previousMatches">Old Matches</a></li>
+  </ul>
+<!-- <h2>Recent Matches</h2> -->
+<div class="row">
+</div>
+
+<div id="usable" style="display:none">
+  <div class="column" style="height: 250px;">
+   <h2 style="height:50px;">{{description}}</h2>
+   <div id="score">
+     <p id="scorecard" data-value="{{matchid}}"><a id="scorecard" href="/score?id={{myid}}" onclick="return myFunction();">view scorecard</a></p>
+   </div>
+ </div>
+</div>
+<script>
+  function myFunction(){
+    const id = document.getElementById('scorecard').dataset.value
+    localStorage.setItem('uniqueid',id)
+    return true;
+  }
+</script>
+<script src="./js/previousMatches.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+</body>
+</html>

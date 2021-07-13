@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/styleTable.css">
+  <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+  <link rel="icon" href="./img/cricicon.jpg">
+  <title>scorecard</title>
+</head>  
+<body>
+
+  <div id="top">
+    <img src="./img/mycricfuzz.jpg">
+    <h1>ScoreCard</h1>
+  </div>
+
+  <ul>
+    <li><a class="active" href="/">Home</a></li>
+    <li><a href="/newmatches">Upcoming Matches</a></li>
+    <li><a href="/playerfinder">Player Finder</a></li>
+    <li><a href="/previousMatches">Old Matches</a></li>
+  </ul>
+
+  <div id='error' style="display:none">
+    <h1 id='etitle'>Scorecard is Currently Unavaiable</h1>
+    <img id='potrait' src='./img/duck.gif' alt='Network Error'>
+  </div>
+  
+  <p id="wtitle"></p>
+  <div id="overal">
+  <table class="table" style="width:60%;">
+    <tr style="height:40px">
+        <th class="title" style="background: #4a4a4a;
+        color:black;"></th>
+        <th  style="background: #4a4a4a"></th>
+        <th style="background: #4a4a4a"></th>
+        <th style="background: #4a4a4a"></th>
+        <th style="background: #4a4a4a"></th>
+        <th style="background: #4a4a4a"></th>
+        <th style="background: #4a4a4a"></th>
+    </tr>
+    <tr id="header" style="height:35px;">
+      <th>Batsman</th>
+      <th>Dismissal info</th>
+      <th style="padding-left:30px;">R</th>
+      <th style="padding-left:30px;">B</th>
+      <th style="padding-left:30px;">4s</th>
+      <th style="padding-left:30px;">6s</th>
+      <th style="padding-left:25px;">SR</th>
+    </tr>
+  </table>
+  <!-- <p id="total" class="bottom" style="float:left;margin-left:30px;">total<p> -->
+ <!--  <p class="bottom" style="float:right;margin-right:500px;margin-top:0px;">{{total}}({{wkts}}wkts,{{overs}}ov)</p> -->
+  <table class="btable" style="width:60%;margin-top:0px;margin-left:30px;">
+    <tr id="header" style="height:35px;">
+    <th>Bowler</th>
+    <th style="padding-left:15px;">O</th>
+    <th style="padding-left:15px;">M</th>
+    <th style="padding-left:15px;">R</th>
+    <th style="padding-left:15px;">W</th>
+    <th style="padding-left:15px;">Eco</th>
+  </tr>
+</table>
+</div>
+
+ <div id="last"></div>
+
+ <fieldset id="forDisplay" class="momz">
+  <legend >Man of the match</legend>
+  <p id="mom" style="margin-top:30px;margin-left:30px;color:rgb(8, 5, 43);font-size:30px;"></p>
+ </fieldset>
+
+ <template id="squad">
+  <fieldset class="momz">
+   <legend >Squad</legend>
+    <p style="margin-left:30px;width:60%">
+      <span style="color:blue;font-size: 20px;">{{team}}</span>
+      <br>{{p1}},{{p2}},{{p3}},{{p4}},{{p5}},{{p6}},{{p7}},{{p8}},{{p9}}</br>
+      {{p10}},{{p11}}
+    </p>
+  </fieldset>
+</template>
+
+<!-- <template id="squad">
+  <p style="margin-left:30px;background-color:lightgray;width:60%">
+    <span style="color:blue;font-size: 30px;">India</span>
+    <br>Rohit Sharma,Sachin Tendulkar,Virat Kohli,Suresh Raina,Rishab Pant,Hardik Pandya,Ravindra Jadeja,Zaheer Khan</br>
+    Bhuvneshwar Kumar,Bumhrah,Chahal
+  </p>
+</template> -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+  <script src="./js/scorecard.js"></script> 
+
+</body>
+</html>

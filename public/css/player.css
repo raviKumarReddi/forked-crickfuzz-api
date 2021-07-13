@@ -1,0 +1,159 @@
+.right {
+  width:60%;
+}
+.left {
+    color:black;
+    font-weight: bold;
+    font-size:18px;
+  }
+  table {
+    border-spacing: 10px 10px;
+  }
+  #personalInfo {
+    margin-left:70px;
+    margin-top:5px;
+    background-color: darkgray;
+    width:800px;
+    padding:5px 5px 5px 5px;
+    margin-bottom: 5px;
+  }
+  #title {
+    margin-left:30px;
+    font-size:20px;
+    font-weight:bold;
+    color:black;
+    margin-bottom:10px;
+  }
+  #moreInfo {
+    margin-left:70px;
+    margin-top:10px;
+    margin-bottom:5px;
+    font-family:Sans-serif;
+    background-color: darkgray;
+    padding:5px 5px 5px 5px;
+    border:1px solid black;
+    border-width:thin;  
+  }
+  #battingTable {
+    margin-left:70px;
+  }
+  th {
+    background-color: darkgray;
+    padding-left: 25px;
+    padding-right:5px;
+  }
+  td {
+    padding-left: 25px;
+    padding-right:5px;
+    background-color:rgb(197, 191, 191) ;
+  }
+  .anotherTitle {
+    margin-left:70px;
+    font-size:20px;
+    margin-bottom:10px;
+    font-weight:bold;
+    color:rgb(197, 191, 191);
+    margin-top: 30px;
+  }
+  #momz{
+  margin-left:70px;
+  margin-top:20px;
+  background-color:darkgray;
+  width:60%;
+  border-color:black;
+  border-width:thin;
+}
+
+legend {
+  font-size: 20px;
+  background-color: rgb(9, 9, 51);
+  color:white
+}
+
+#sideTitle {
+  /* content: ""; */
+  margin-top:30px;
+  display: table;
+  clear: both;
+}
+
+#rightTitle {
+/*   
+  margin-left: 20px; */
+  float:left;
+  margin-top: 80px;
+  text-align: left;
+}
+#name {
+  font-size:30px;
+  font-weight: bold;
+  padding-left: 40px;
+  color:rgb(197, 191, 191);
+}
+#country {
+  color:gray;
+  font-size:20px;
+  padding-left: 40px;
+  font-weight:bold;
+}
+#image {
+    margin-left:70px;
+    /* margin-top:100px; */
+    margin-bottom:5px;
+    float:left;
+  }
+
+
+  
+  body {
+    background-color:  #111;
+  }
+  
+  #top {
+    background-color:lightgray;
+    width: 100%;
+    top:0px;
+  }
+  #top img{
+    float:left;
+    margin-left:0px;
+    height:75px;
+    width:200px;
+  }
+  #top h1 {
+    position:realtive;
+    color:rgb(100, 98, 98);
+    font-size:65px;
+    margin-top:40px;
+    margin-left:250px;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+    border-right:1px solid #bbb;
+  }
+  
+  li a {
+    display: block;
+    /* color: white; */
+    color: #bbb;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: rgb(102, 99, 99);
+  }
+  
+  .active {
+    background-color: rgb(6, 73, 26);
+  }

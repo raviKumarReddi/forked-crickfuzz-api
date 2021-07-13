@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/styles.css">
+<link rel="icon" href="./img/cricicon.jpg">
+<title>CrickFuzz</title>
+</head>
+<body>
+  <div id="top">
+    <img src="./img/mycricfuzz.jpg">
+    <h1>Welcome to CricFuzz</h1>
+  </div>
+
+  <ul id="navibar">
+    <li><a class="active" href="/">Home</a></li>
+    <li><a href="/newmatches" >Upcoming Matches</a></li>
+    <li><a id='finder' href="/playerfinder" >Player Finder</a></li>
+    <li><a href="/previousMatches" >Old Matches</a></li>
+  </ul>
+
+<div class="row" style="margin-top:30px;">
+</div>
+
+<div id="usable" style="display:none">
+  <div class="column">
+   <h2 style="height:50px;">{{team1}} vs {{team2}}</h2>
+   <p style="height:20px;overflow:hidden">{{type}}</p>
+   <p id="toss">{{toss}} won the toss</p>
+   <p>match started at {{time}}GMT</p>
+    <div id="score">
+      <p id="scorecard" data-value="{{matchid}}"><a id="scorecard" href="/score?id={{myid}}" onclick="return myFunction();">view scorecard</a></p>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  // function myFunction(){
+  //   const id = document.getElementById('scorecard').dataset.value
+  //   localStorage.setItem('uniqueid',id)
+  //   return true;
+  // }
+  function func(id){
+    console.log('hiie1234')
+    const parent = document.getElementById('navibar')
+    for(i=0;i<parent.children.length();i++)
+      parent.children[i].children[0].className =''
+    parent.children[id].children[0].className = 'active'
+    console.log(document.getElementById('finder'))
+    console.log(parent)
+  }
+</script>
+<script src="./js/app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+</body>
+</html>
+
+<!-- https://www.w3schools.com/css/css_navbar_horizontal.asp -->
